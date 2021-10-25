@@ -1,0 +1,15 @@
+# Palindrome Permutation 
+Given a string, write a function to check if it is a permutation of a palindrome.
+
+That means we need to check if there is any permutation of the given string exits, 
+which is a palindrome.
+
+A palindrome is a word or phrase that is the same forwards and backwards. 
+A permutation is a rearrangement of letters. The palindrome does not need
+to be limited to just dictionary words.
+
+EXAMPLE:
+
+Input: Tact Coa
+
+Output: True (permutations: "taco cat", "atco eta", etc.)
