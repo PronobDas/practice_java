@@ -12,4 +12,4 @@ EXAMPLE:
 
 Input: Tact Coa
 
-Output: True (permutations: "taco cat", "atco eta", etc.)
+Output: True (permutations: "taco cat", "atco cta", etc.)
