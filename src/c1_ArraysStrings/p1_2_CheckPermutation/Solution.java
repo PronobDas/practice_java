@@ -15,18 +15,18 @@ public class Solution {
 
         for (int i = 0; i <str2.length(); i++)
         {
-            boolean flag = false;
+            boolean matchFound = false;
             char c = str2.charAt(i);
             for (int j = 0; j < arr.length; j++)
             {
                 if (arr[j] == c)
                 {
                     arr[j] = ' '; // replacing by whitespaces means that the string can not contain whitespace.
-                    flag = true;
+                    matchFound = true;
                     break;
                 }
             }
-            if (!flag)
+            if (!matchFound)
                 return false;
         }
         return true;
@@ -49,6 +49,7 @@ public class Solution {
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
 
+        // if ( sort(str1) == sort(str2) ) --> won't work.
         if (sort(str1).equals(sort(str2)))
             return true;
         else
@@ -86,7 +87,7 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        if (isPermutationV3("Eyb", "Bye"))
+        if (isPermutationV2("Eyb", "Bye"))
             System.out.println("Permutation of one another.");
         else
             System.out.println("Not Permutation.");
